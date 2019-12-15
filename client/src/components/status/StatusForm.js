@@ -64,12 +64,6 @@ const StatusForm = () => {
           value={"Submit"}
           className="btn btn-primary btn-block"
         />
-        {/* <input
-          type="submit"
-          value={"Export"}
-          className="btn btn-primary btn-block"
-          onClick={exportData()}
-        /> */}
       </div>
     </form>
   );
