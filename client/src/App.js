@@ -8,6 +8,7 @@ import Status from "./components/status/Status";
 import Approvals from "./components/approvals/Approvals";
 import "./App.css";
 import ApprovalsState from "./context/approvals/ApprovalsState";
+import Dashboard from "./components/dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Navbar />
             <div className="container">
               <Switch>
+                <Route exact path="/" component={Dashboard} />
                 <Route exact path="/status" component={Status} />
                 <Route exact path="/approvals" component={Approvals} />
               </Switch>

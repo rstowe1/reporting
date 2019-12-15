@@ -20,8 +20,6 @@ const Table = ({ load }) => {
       });
   }, [approvalsContext]);
 
-  const data = Object.values(tableData ? tableData : []);
-
   const columns = [
     {
       id: "Name",

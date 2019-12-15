@@ -1,9 +1,9 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import ApprovalsContext from "../../context/approvals/approvalsContext";
 
 const ApprovalsForm = () => {
   const approvalsContext = useContext(ApprovalsContext);
-  const { addApprovals, getApprovals } = approvalsContext;
+  const { addApprovals } = approvalsContext;
 
   const [approvals, SetApprovals] = useState({
     name: "",

@@ -24,7 +24,8 @@
     "mongoose": "^5.7.12",
     "react-router-dom": "^5.1.2",
     "react-table": "^6.10.3",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "schema-utils": "^2.6.1"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",

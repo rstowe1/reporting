@@ -1,10 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import StatusContext from "../../context/status/statusContext";
 
 const StatusForm = () => {
   const statusContext = useContext(StatusContext);
 
-  const { addStatus, getStatus } = statusContext;
+  const { addStatus } = statusContext;
 
   const [status, SetStatus] = useState({
     name: "",

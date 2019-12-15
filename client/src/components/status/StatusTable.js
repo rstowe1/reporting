@@ -4,7 +4,7 @@ import "react-table/react-table.css";
 import axios from "axios";
 import StatusContext from "../../context/status/statusContext";
 
-const Table = ({ load }) => {
+const Table = () => {
   const [tableData, setTableData] = useState([]);
 
   const statusContext = useContext(StatusContext);

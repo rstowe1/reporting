@@ -3,13 +3,7 @@ import axios from "axios";
 
 import StatusContext from "./statusContext";
 import statusReducer from "./statusReducer";
-import {
-  ADD_STATUS,
-  DELETE_STATUS,
-  GET_STATUS,
-  CATCH_ERROR,
-  CLEAR_CURRENT
-} from "../types";
+import { ADD_STATUS, DELETE_STATUS, GET_STATUS, CATCH_ERROR } from "../types";
 
 const StatusState = props => {
   const initialState = {
