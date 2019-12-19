@@ -34,6 +34,10 @@ const Table = props => {
       accessor: "name"
     },
     {
+      Header: "Type",
+      accessor: "type"
+    },
+    {
       Header: "Date",
       accessor: "date"
     },
