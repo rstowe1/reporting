@@ -8,7 +8,6 @@ import { ADD_STATUS, DELETE_STATUS, GET_STATUS, CATCH_ERROR } from "../types";
 const StatusState = props => {
   const initialState = {
     name: null,
-    type: null,
     date: null,
     comment: null,
     queryDate: Date()
@@ -65,7 +64,6 @@ const StatusState = props => {
     <StatusContext.Provider
       value={{
         name: state.name,
-        type: state.type,
         date: state.date,
         comment: state.comment,
         queryDate: Date(),

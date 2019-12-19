@@ -29,10 +29,6 @@ const Table = () => {
       accessor: "name"
     },
     {
-      Header: "Type",
-      accessor: "type"
-    },
-    {
       Header: "Date",
       accessor: "date"
     },

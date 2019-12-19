@@ -1,20 +1,19 @@
-import React, { useState, useContext } from "react";
+import React, {useState, useContext} from "react";
 import StatusContext from "../../context/status/statusContext";
 
 const StatusForm = () => {
   const statusContext = useContext(StatusContext);
 
-  const { addStatus } = statusContext;
+  const {addStatus} = statusContext;
 
   const [status, SetStatus] = useState({
     name: "",
-    type: "",
     date: "",
     comment: "",
     queryDate: Date()
   });
 
-  const { name, type, date, comment } = status;
+  const {name, date, comment} = status;
 
   const onChange = e => {
     SetStatus({
@@ -29,16 +28,11 @@ const StatusForm = () => {
     clearAll();
   };
 
-  const exportData = e => {};
+  const exportData = e => {
+  };
 
   const clearAll = () => {
-    SetStatus({
-      name: "",
-      type: "",
-      date: "",
-      comment: "",
-      queryDate: Date()
-    });
+    SetStatus({name: "", date: "", comment: "", queryDate: Date()});
   };
 
   return (
@@ -52,7 +46,6 @@ const StatusForm = () => {
         onChange={onChange}
       />
       <select
-        type="text"
         placeholder="Type"
         name="type"
         value={type}

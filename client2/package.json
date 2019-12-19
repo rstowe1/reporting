@@ -3,20 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.19.0",
-    "config": "^3.2.4",
-    "express": "^4.17.1",
-    "express-validator": "^6.3.0",
-    "formik": "^2.0.8",
-    "mongoose": "^5.8.1",
+    "core-util-is": "^1.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "react-table": "^6.8.5"
+    "react-scripts": "3.2.0",
+    "schema-utils": "^2.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,10 +29,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "concurrently": "^5.0.1",
-    "nodemon": "^2.0.2"
   },
   "proxy": "http://localhost:5000"
 }
