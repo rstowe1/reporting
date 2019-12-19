@@ -9,6 +9,10 @@ const StatusSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  type: {
+    type: String,
+    required: true
+  },
   queryDate: {
     type: Date,
     value: new Date()

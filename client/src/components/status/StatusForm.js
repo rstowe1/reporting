@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, {useState, useContext} from "react";
 import StatusContext from "../../context/status/statusContext";
 
 const StatusForm = () => {
   const statusContext = useContext(StatusContext);
 
-  const { addStatus } = statusContext;
+  const {addStatus} = statusContext;
 
   const [status, SetStatus] = useState({
     name: "",
@@ -13,7 +13,7 @@ const StatusForm = () => {
     queryDate: Date()
   });
 
-  const { name, date, comment } = status;
+  const {name, date, comment} = status;
 
   const onChange = e => {
     SetStatus({
@@ -28,10 +28,11 @@ const StatusForm = () => {
     clearAll();
   };
 
-  const exportData = e => {};
+  const exportData = e => {
+  };
 
   const clearAll = () => {
-    SetStatus({ name: "", date: "", comment: "", queryDate: Date() });
+    SetStatus({name: "", date: "", comment: "", queryDate: Date()});
   };
 
   return (
@@ -44,6 +45,16 @@ const StatusForm = () => {
         value={name}
         onChange={onChange}
       />
+      <select
+        placeholder="Type"
+        name="type"
+        value={type}
+        onChange={onChange}
+      >
+        <option value=""> Select One...</option>
+        <option value="UpLoad">UpLoad</option>
+        <option value="Reconciliation">Reconciliation</option>
+      </select>
       <input
         type="date"
         placeholder="Date"
