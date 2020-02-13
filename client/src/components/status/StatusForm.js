@@ -16,20 +16,20 @@ const StatusForm = () => {
 
   const { name, type, date, comment } = status;
 
-  const onChange = e => {
+  const onChange = (e) => {
     SetStatus({
       ...status,
       [e.target.name]: e.target.value
     });
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     addStatus(status);
     clearAll();
   };
 
-  const exportData = e => {};
+  const exportData = (e) => {};
 
   const clearAll = () => {
     SetStatus({
@@ -44,13 +44,23 @@ const StatusForm = () => {
   return (
     <form onSubmit={onSubmit}>
       <h2 className="text-primary">Add Item</h2>
-      <input
+      <select
         type="text"
         placeholder="Name"
         name="name"
         value={name}
         onChange={onChange}
-      />
+      >
+        <option value=""> Select One...</option>
+        <option value="Ryan">Ryan</option>
+        <option value="Patrick">Patrick</option>
+        <option value="Jennifer">Jennifer</option>
+        <option value="Dan">Dan</option>
+        <option value="David">David</option>
+        <option value="Devin">Devin</option>
+        <option value="Will">Will</option>
+        <option value="Carl">Carl</option>
+      </select>
       <select
         type="text"
         placeholder="Type"
