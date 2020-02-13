@@ -49,6 +49,9 @@ img {
 }
 
 /* Text Styles*/
+#statusName {
+  margin-bottom: 20px;
+}
 .x-large {
   font-size: 4rem;
   line-height: 1.2;

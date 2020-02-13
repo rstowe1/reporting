@@ -45,6 +45,7 @@ const StatusForm = () => {
     <form onSubmit={onSubmit}>
       <h2 className="text-primary">Add Item</h2>
       <select
+        id="statusName"
         type="text"
         placeholder="Name"
         name="name"
